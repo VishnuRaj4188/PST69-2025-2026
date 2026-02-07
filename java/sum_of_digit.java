@@ -1,21 +1,18 @@
 package pdf;
 import java.util.Scanner;
-public class fact {
+public class sum_of_digit {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter the number: ");
         int a = sc.nextInt();
-        int rev= 0;
+        int sum= 0;
         while (a!=0) {
-        int b= a%10;
-        rev=rev*10+b;
-        a/=10;
+            int b= a%10;
+            sum+=b;
+            a /=10;
         }
-        System.out.print("reversed string"+rev);
+        System.out.print("sum of digits"+sum);
         sc.close();
-        
-        
-        
 	}
 
 }
