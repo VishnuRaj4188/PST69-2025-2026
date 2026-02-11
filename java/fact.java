@@ -1,21 +1,18 @@
-package pdf;
+package SCANNER;
 import java.util.Scanner;
 public class fact {
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.print("Enter the number: ");
-        int a = sc.nextInt();
-        int rev= 0;
-        while (a!=0) {
-        int b= a%10;
-        rev=rev*10+b;
-        a/=10;
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int num = sc.nextInt();
+        long factorial = 1;
+        for (int i = 1; i <= num; i++) {
+            factorial = factorial * i;
         }
-        System.out.print("reversed string"+rev);
+        System.out.println("Factorial of " + num + " is: " + factorial);
         sc.close();
-        
-        
-        
-	}
-
+    }
 }
+
+
+
